@@ -1,0 +1,62 @@
+body {
+  background-color: #dfdfdf; }
+
+input[type="date"] {
+  display: inline-block;
+  width: 260px; }
+
+.tile-row {
+  margin-top: 1rem; }
+  .tile-row .tile {
+    padding: .5rem;
+    border: 1px solid #acacac;
+    cursor: pointer; }
+    .tile-row .tile:hover {
+      background-color: rgba(255, 255, 255, 0.6); }
+  .tile-row .active {
+    background-color: rgba(0, 0, 0, 0.2); }
+    .tile-row .active:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+
+.top-bar {
+  padding: 0;
+  background-color: #3f3f3f;
+  color: #cfcfcf; }
+  .top-bar ul {
+    background-color: transparent; }
+    .top-bar ul li {
+      background-color: #3f3f3f; }
+  .top-bar a {
+    color: #cfcfcf; }
+    .top-bar a::after {
+      border-color: #cfcfcf; }
+
+#Orders #FieldList, #Orders #ChosenList {
+  display: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 55%;
+  overflow-y: scroll; }
+  #Orders #FieldList .select-tile, #Orders #ChosenList .select-tile {
+    cursor: pointer; }
+  #Orders #FieldList .chosen-tile:nth-child(even), #Orders #ChosenList .chosen-tile:nth-child(even) {
+    background-color: #eeeeee; }
+  #Orders #FieldList .select-tile, #Orders #FieldList .chosen-tile, #Orders #ChosenList .select-tile, #Orders #ChosenList .chosen-tile {
+    overflow-x: hidden;
+    background-color: #fefefe;
+    padding-left: 0.4rem;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    clear: both; }
+    #Orders #FieldList .select-tile:nth-child(1), #Orders #FieldList .chosen-tile:nth-child(1), #Orders #ChosenList .select-tile:nth-child(1), #Orders #ChosenList .chosen-tile:nth-child(1) {
+      border-top: 1px solid #000; }
+    #Orders #FieldList .select-tile i, #Orders #FieldList .chosen-tile i, #Orders #ChosenList .select-tile i, #Orders #ChosenList .chosen-tile i {
+      cursor: pointer;
+      float: right;
+      margin-right: 1rem;
+      font-size: 1.4rem; }
+    #Orders #FieldList .select-tile .fi-x, #Orders #FieldList .chosen-tile .fi-x, #Orders #ChosenList .select-tile .fi-x, #Orders #ChosenList .chosen-tile .fi-x {
+      color: #ff0000; }
+  #Orders #FieldList .selected, #Orders #ChosenList .selected {
+    background-color: #cecece; }

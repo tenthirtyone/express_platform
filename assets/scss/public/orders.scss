@@ -1,0 +1,44 @@
+#Orders {
+  #FieldList, #ChosenList {
+    display: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 55%;
+    overflow-y: scroll;
+    .select-tile {
+      cursor: pointer;
+    }
+    .chosen-tile {
+      &:nth-child(even) {
+        background-color: #eeeeee;
+      }
+    }
+    .select-tile, .chosen-tile {
+      overflow-x: hidden;
+      background-color: #fefefe;
+      padding-left: 0.4rem;
+      border-right: 1px solid $black;
+      border-left: 1px solid $black;
+      border-bottom: 1px solid $black;
+      clear: both;
+      &:nth-child(1) {
+        border-top: 1px solid $black;
+      }
+      i {
+        cursor: pointer;
+        float: right;
+        margin-right: 1rem;
+        font-size: 1.4rem;
+      }
+      .fi-x {
+        color: $err;
+      }
+    }
+    .selected {
+      background-color: #cecece;
+    }
+  }
+  #SelectAll, #Reset, .dates {
+    
+  }
+}

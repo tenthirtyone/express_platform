@@ -1,0 +1,17 @@
+.top-bar {
+  padding: 0;
+  background-color: $mortarGrey;
+  color: $mortarWhite;
+  ul {
+    background-color: rgba(0,0,0,0);
+    li {
+      background-color: $mortarGrey;    
+    }
+  }
+  a {
+    color: $mortarWhite;
+    &::after {
+      border-color: $mortarWhite;
+    }
+  }
+}

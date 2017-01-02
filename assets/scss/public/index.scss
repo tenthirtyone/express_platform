@@ -1,0 +1,27 @@
+
+body {
+  background-color: $offWhite;
+}
+
+input[type="date"] {
+  display: inline-block;
+  width: 260px;
+}
+
+.tile-row {
+  margin-top: 1rem;
+  .tile {
+    padding: .5rem;
+    border: 1px solid darken($offWhite, 20%);
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255,255,255,0.6);
+    }
+  }
+  .active {
+    background-color: rgba(0,0,0,0.2);
+    &:hover {
+      background-color: rgba(0,0,0,0.2);
+    }
+  }
+}

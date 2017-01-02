@@ -1,0 +1,25 @@
+<script id="FieldTemplate" type="text/Template">
+<%% fields.forEach((field) => { %%>
+<div class="select-tile">
+  <%%= field %%>
+</div>
+<%% }); %%>
+</script>
+
+
+<script id="ChosenTemplate" type="text/Template">
+<%% fields.forEach((field) => { %%>
+<div class="chosen-tile">
+  <%%= field %%>
+  <i class="fi-x"></i>
+  <i class="fi-arrow-down"></i>
+  <i class="fi-arrow-up"></i>
+</div>
+<%% }); %%>
+</script>
+
+<script id="SelectTemplate" type="text/Template">
+<%% options.forEach((option) => { %%>
+  <option class="select-option" value="<%%= option %%>"><%%= option %%></option>
+<%% }); %%>
+</script>
